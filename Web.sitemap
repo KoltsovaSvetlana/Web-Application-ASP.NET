@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="Домашние любимцы" description="Домашние любимцы">
+      <siteMapNode url="~/Home.aspx" title="Главная страница" description="Интересные и любопытные факты о животных" />
+      <siteMapNode url="~/Dogs.aspx" title="Собаки" description="Собаки" />
+      <siteMapNode url="~/Cats.aspx" title="Кошки" description="Кошки" />
+      <siteMapNode url="~/Rats.aspx" title="Грызуны" description="Грызуны" />
+      <siteMapNode url="~/Fishes.aspx" title="Аквариумные рыбки" description="Аквариумные рыбки" />
+      <siteMapNode url="~/Birds.aspx" title="Птицы" description="Птицы" />
+      <siteMapNode url="~/Registration.aspx" title="Регистрация" description="Регистрация" />
+  </siteMapNode>
+</siteMap>

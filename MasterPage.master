@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Zoo-zoo-zoo</title>
+    <link rel="stylesheet" href="Css/Styles.css" />
+    <link rel="shortcut icon" href="Img/favicon.ico" type="image/x-icon" />
+    <asp:ContentPlaceHolder id="headContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="mainForm" runat="server">
+    <div id="mainDiv">
+        <div id="labelDiv">
+            <div id="nameSite"></div>
+            <div id="labelDiv1">
+                <asp:Label id="mainLabel1" runat="server" 
+                Text="Приветствую Вас на моем сайте!!!">
+                </asp:Label>
+                <asp:Label id="mainLabel2" runat="server" 
+                Text="Будьте как дома, но не забывайте, что Вы в гостях ...">
+                </asp:Label>
+            </div>
+        </div>
+        <div id="pathDiv">
+             <asp:SiteMapPath id="SiteMapPath" runat="server"></asp:SiteMapPath>
+             <asp:Label id="registrStatus" runat="server" Text="Гость"></asp:Label>
+        </div>
+        <div id="menuDiv">
+            <asp:TreeView id="menuTreeView" runat="server" DataSourceID="animalsSiteMapDataSource">
+            </asp:TreeView>
+            <asp:SiteMapDataSource id="animalsSiteMapDataSource" runat="server" />
+        </div>
+        <div id="contentDiv">
+            <asp:ContentPlaceHolder id="formContent" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <div id="footerDiv">
+        <em>@Svetlana Koltsova</em>
+    </div>
+    </form>
+</body>
+</html>
